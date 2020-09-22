@@ -1,36 +1,36 @@
-# Installation
+# Instalación
 
-## Release Notes
+## Notas de Lanzamiento
 
-Latest version: ![npm](https://img.shields.io/npm/v/vue/next.svg)
+Última Versión: ![npm](https://img.shields.io/npm/v/vue/next.svg)
 
-Detailed release notes for each version are available on [GitHub](https://github.com/vuejs/vue-next/blob/master/CHANGELOG.md).
+Las notas de lanzamiento detalladas para cada versión se encuentran en [GitHub](https://github.com/vuejs/vue-next/blob/master/CHANGELOG.md).
 
 ## Vue Devtools
 
-> Currently in Beta - Vuex and Router integration is still WIP
+> Actualmente en fase Beta - Vuex y la integración con Router aún son trabajo en progreso.
 
-When using Vue, we recommend also installing the [Vue Devtools](https://github.com/vuejs/vue-devtools#vue-devtools) in your browser, allowing you to inspect and debug your Vue applications in a more user-friendly interface.
+Cuando utiliza Vue, recomendamos instalar también las [Vue Devtools](https://github.com/vuejs/vue-devtools#vue-devtools) en su navegador, permitiéndole inspeccionar y depurar sus aplicaciones desarrolladas con Vue mediante una interfaz más amigable al usuario.
 
-[Get the Chrome Extension](https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg)
+[Obtener la Extensión para Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg)
 
-[Get the Firefox Addon](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+[Obtener el Addon para Firefox](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
 
-[Get the standalone Electron app](https://github.com/vuejs/vue-devtools/blob/dev/packages/shell-electron/README.md)
+[Obtener la aplicación de Electron](https://github.com/vuejs/vue-devtools/blob/dev/packages/shell-electron/README.md)
 
 ## CDN
 
-For prototyping or learning purposes, you can use the latest version with:
+Para prototipos o con fines de aprendizaje, puede utilizar la última versión de la siguiente forma:
 
 ```html
 <script src="https://unpkg.com/vue@next"></script>
 ```
 
-For production, we recommend linking to a specific version number and build to avoid unexpected breakage from newer versions.
+Para producción, recomendamos vincular a una versión específica para evitar rupturas inesperadas de nuevas versiones.
 
 ## NPM
 
-NPM is the recommended installation method when building large scale applications with Vue. It pairs nicely with module bundlers such as [Webpack](https://webpack.js.org/) or [Rollup](https://rollupjs.org/). Vue also provides accompanying tools for authoring [Single File Components](../guide/single-file-component.html).
+NPM es el método recomendado de instalación cuando se está construyendo aplicaciones a gran escala con Vue. Se empareja bien con los de empaquetadores de módulos como [Webpack](https://webpack.js.org/) o [Rollup](https://rollupjs.org/). Vue también provee herramientas para la creación de [Single File Components](../guide/single-file-component.html).
 
 ```bash
 # latest stable
@@ -39,21 +39,21 @@ $ npm install vue@next
 
 ## CLI
 
-Vue provides an [official CLI](https://github.com/vuejs/vue-cli) for quickly scaffolding ambitious Single Page Applications. It provides batteries-included build setups for a modern frontend workflow. It takes only a few minutes to get up and running with hot-reload, lint-on-save, and production-ready builds. See [the Vue CLI docs](https://cli.vuejs.org) for more details.
+Vue provee una [interfaz de línea de comandos (CLI) oficial](https://github.com/vuejs/vue-cli) para realizar la creación rápida de la estructura base para las Single Page Applications. Esta provee _setups_ con baterías incluidas para un flujo de trabajo de frontend moderno. Solo toma unos minutos configurar y ejecutarlo con _hot-reload_, _lint-on-save_, y compilaciones listas para producción. Véase [the Vue CLI docs](https://cli.vuejs.org) para más detalles.
 
 ::: tip
-The CLI assumes prior knowledge of Node.js and the associated build tools. If you are new to Vue or front-end build tools, we strongly suggest going through <a href="./">the guide</a> without any build tools before using the CLI.
+La interfaz de línea de comandos (CLI) asume que usted posee conocimiento previo de Node.js y las herramientas de compilación asociadas. Si usted es nuevo en Vue o en el manejo de las herramientas de compilación de front-end, le recomendamos leer <a href="./">la guía</a> sin ninguna herramienta de compilación antes de usar la interfaz de línea de comandos.
 :::
 
-For Vue 3, you should use Vue CLI v4.5 available on `npm` as `@vue/cli`. To upgrade, you need to reinstall the latest version of `@vue/cli` globally:
+Para Vue 3, usted debería utilizar Vue CLI v4.5 disponible en `npm` bajo el nombre de `@vue/cli`. Para actualizar, ustd necesita reinstalar la última versión de `@vue/cli` globalmente:
 
 ```bash
 yarn global add @vue/cli
-# OR
+# O
 npm install -g @vue/cli
 ```
 
-Then in the Vue projects, run
+Luego, en los proyectos de Vue, ejecute
 
 ```bash
 vue upgrade --next
@@ -61,90 +61,90 @@ vue upgrade --next
 
 ## Vite
 
-[Vite](https://github.com/vitejs/vite) is a web development build tool that allows for lighting fast serving of code due its native ES Module import approach.
+[Vite](https://github.com/vitejs/vite) es una herramienta de desarrollo web que le permite el rápido despliegue del código debido a su enfoque nativo para importación de Módulos ES.
 
-Vue projects can quickly be set up with Vite by running the following commands in your terminal.
+Los proyectos de Vue pueden ser rápidamente configurados con Vite ejecutando los siguientes comandos en su terminal.
 
-With NPM:
+Con NPM:
 
 ```bash
-$ npm init vite-app <project-name>
-$ cd <project-name>
+$ npm init vite-app <nombre-de-proyecto>
+$ cd <nombre-de-proyecto>
 $ npm install
 $ npm run dev
 ```
 
-Or with Yarn:
+O con Yarn:
 
 ```bash
-$ yarn create vite-app <project-name>
-$ cd <project-name>
+$ yarn create vite-app <nombre-de-proyecto>
+$ cd <nombre-de-proyecto>
 $ yarn
 $ yarn dev
 ```
 
-## Explanation of Different Builds
+## Explicación de las Distintas Compilaciones.
 
-In the [`dist/` directory of the NPM package](https://cdn.jsdelivr.net/npm/vue@3.0.0-rc.1/dist/) you will find many different builds of Vue.js. Here is an overview of which `dist` file should be used depending on the use-case.
+En el [directorio `dist/` del paquete NPM](https://cdn.jsdelivr.net/npm/vue@3.0.0-rc.1/dist/) encontrará varias compilaciones de Vue.js. Aquí está una visión general de cuál archivo del directorio `dist` debería ser utilizado dependiendo del caso de uso.
 
-### From CDN or without a Bundler
+### Desde un CDN o sin un Empaquetador
 
 #### `vue(.runtime).global(.prod).js`:
 
-- For direct use via `<script src="...">` in the browser, exposes the Vue global.
-- In-browser template compilation:
-  - `vue.global.js` is the "full" build that includes both the compiler and the runtime so it supports compiling templates on the fly.
-  - `vue.runtime.global.js` contains only the runtime and requires templates to be pre-compiled during a build step.
-- Inlines all Vue core internal packages - i.e. it's a single file with no dependencies on other files. This means you must import everything from this file and this file only to ensure you are getting the same instance of code.
-- Contains hard-coded prod/dev branches, and the prod build is pre-minified. Use the `*.prod.js` files for production.
+- Para uso directo mediante `<script src="...">` en el navegador, expone la variable Vue globalmente.
+- Compilación de plantillas dentro del navegador:
+  - `vue.global.js` es la compilación completa que incluye ambos, el compilador y el entorno de ejecución, así que soporta compilar plantillas sobre la marcha.
+  - `vue.runtime.global.js` contiene solo el entorno de ejecución y requiere que las plantillas sean pre-compiladas durante la etapa de compilación.
+- Todos los paquetes internos del núcleo de Vue en líneas, p. ej. un único archivo sin dependencias de otros. Esto significa que debe importar todo solo desde este archivo para garantizar que está obteniendo la misma instancia de código.
+- Contiene las ramas prod/dev codificadas, y la compilación de prod está pre-minificada. Utilice los archivos `*.prod.js` para producción.
 
-:::tip Note
-Global builds are not [UMD](https://github.com/umdjs/umd) builds. They are built as [IIFEs](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) and are only meant for direct use via `<script src="...">`.
+:::tip Nota
+Las compilaciones globales no son compilaciones [UMD](https://github.com/umdjs/umd). Están compiladas como [IIFEs](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) y solo están destinadas para uso directo mediante `<script src="...">`.
 :::
 
 #### vue(.runtime).esm-browser(.prod).js:
 
-- For usage via native ES modules imports (in browser via `<script type="module">`.
-- Shares the same runtime compilation, dependency inlining and hard-coded prod/dev behavior with the global build.
+- Para uso mediante la importación de módulos ES nativos (en el navegador mediante `<script type="module">`).
+- Comparte la misma compilación del entorno de ejecución, declaración de dependencias en línea y el comportamiento codificado prod/dev con la compilación global.
 
-### With a Bundler
+### Con un Empaquetador
 
 #### vue(.runtime).esm-bundler.js:
 
-- For use with bundlers like `webpack`, `rollup` and `parcel`.
-- Leaves prod/dev branches with `process.env.NODE_ENV guards` (must be replaced by bundler)
-- Does not ship minified builds (to be done together with the rest of the code after bundling)
-- Imports dependencies (e.g. `@vue/runtime-core`, `@vue/runtime-compiler`)
-  - Imported dependencies are also esm-bundler builds and will in turn import their dependencies (e.g. @vue/runtime-core imports @vue/reactivity)
-  - This means you **can** install/import these deps individually without ending up with different instances of these dependencies, but you must make sure they all resolve to the same version.
-- In-browser template compilation:
-  - `vue.runtime.esm-bundler.js` **(default)** is runtime only, and requires all templates to be pre-compiled. This is the default entry for bundlers (via module field in `package.json`) because when using a bundler templates are typically pre-compiled (e.g. in `*.vue` files).
-  - `vue.esm-bundler.js`: includes the runtime compiler. Use this if you are using a bundler but still want runtime template compilation (e.g. in-DOM templates or templates via inline JavaScript strings). You will need to configure your bundler to alias vue to this file.
+- Para uso con empaquetadores como `webpack`, `rollup` y `parcel`.
+- Deja las ramas prod/dev con `process.env.NODE_ENV guards` (debe ser reemplazado por el empaquetador)
+- No entrega las compilaciones minificadas (para ser minificado junto con el resto del código después de empaquetar)
+- Importa las dependencias (p. ej. `@vue/runtime-core`, `@vue/runtime-compiler`)
+  - Las dependencias importadas son también compilaciones _esm-bundler_ y es por esto que importarán sus dependencias (e.g. @vue/runtime-core imports @vue/reactivity)
+  - Esto significa que usted **puede** instalar/importar esas dependencias sin terminar con diferentes instancias de ellas, pero debe estar seguro de que todas ellas se resuelven a la misma versión.
+- Compilación de plantillas dentro del navegador:
+  - `vue.runtime.esm-bundler.js` **(por defecto)** es solo entorno de ejecución, y requiere que todas las plantillas sean pre-compiladas. Esta es la entrada por defecto para los empaquetadores (mediante el campo módulo en `package.json`) debido a que cuando se utiliza un empaquetador las plantillas son típicamente pre-compiladas (p. ej. en los archivos `*.vue`).
+  - `vue.esm-bundler.js`: incluye el compilador del entorno de ejecución. Use esto si está empleando un empaquetador pero quiere la compilación de plantillas en tiempo de ejecución (p. ej. plantillas dentro del DOM o plantillas mediante _strings_ en línea con JavaScript). Necesitará configurar su empaquetador para establecer el alias vue a este archivo.
 
-### For Server-Side Rendering
+### Para el Renderizado en el lado del Servidor
 
 #### `vue.cjs(.prod).js`:
 
-- For use in Node.js server-side rendering via `require()`.
-- If you bundle your app with webpack with `target: 'node'` and properly externalize `vue`, this is the build that will be loaded.
-- The dev/prod files are pre-built, but the appropriate file is automatically required based on `process.env.NODE_ENV`.
+- Para uso en renderizado en el lado del servidor con Node.js mediante `require()`.
+- Si usted empaqueta su aplicación con webpack utilizando `target: 'node'` y externaliza apropiadamente `vue`, esta será la compilación que será cargada.
+- Los archivos dev/prod son pre-compilados, pero el archivo apropiado es requerido automáticamente basado en `process.env.NODE_ENV`.
 
-## Runtime + Compiler vs. Runtime-only
+## Entorno en tiempo de Ejecución + Compilador vs. Solo Entorno en tiempo de Ejecución
 
-If you need to compile templates on the client (e.g. passing a string to the template option, or mounting to an element using its in-DOM HTML as the template), you will need the compiler and thus the full build:
+Si usted necesita compilar plantillas en el cliente (p. ej. pasando un parámetro a la opción de plantilla, o montando en un elemento utilizando su HTML dentro del DOM como la plantilla), necesitará el compilador y por ello la compilación completa:
 
 ```js
-// this requires the compiler
+// esto requiere el compilador
 Vue.createApp({
-  template: '<div>{{ hi }}</div>'
+  template: '<div>{{ hola }}</div>'
 })
 
-// this does not
+// esto no
 Vue.createApp({
   render() {
-    return Vue.h('div', {}, this.hi)
+    return Vue.h('div', {}, this.hola)
   }
 })
 ```
 
-When using `vue-loader`, templates inside `*.vue` files are pre-compiled into JavaScript at build time. You don’t really need the compiler in the final bundle, and can therefore use the runtime-only build.
+Cuando se esté utilizando `vue-loader`, las plantillas dentro de archivos `*.vue` son pre-compiladas a JavaScript en tiempo de compilación. Usted no necesita realmente el compilador en el empaquetado final y, por lo tanto, puede utilizar la compilación solo entorno en tiempo de ejecución.
