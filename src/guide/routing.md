@@ -1,12 +1,12 @@
-# Routing
+# Enrutamiento
 
-## Official Router
+## Enrutador Oficial
 
-For most Single Page Applications, it's recommended to use the officially-supported [vue-router library](https://github.com/vuejs/vue-router). For more details, see vue-router's [documentation](https://router.vuejs.org/).
+Para la mayoría de Single Page Applications, es recomendable utilizar la librería oficialmente soportada [vue-router](https://github.com/vuejs/vue-router). Para más detalles, véase la [documentación de Vue Router](https://router.vuejs.org/).
 
-## Simple Routing from Scratch
+## Enrutamiento Simple desde Cero
 
-If you only need very simple routing and do not wish to involve a full-featured router library, you can do so by dynamically rendering a page-level component like this:
+Si usted solo necesita enrutamiento simple y no desea involucrarse con una librería de enrutamiento con demasiadas características, puede hacerlo renderizando dinámicamente un componente a nivel de página como se muestra a continuación:
 
 ```js
 const NotFoundComponent = { template: '<p>Page not found</p>' }
@@ -37,8 +37,8 @@ const SimpleRouter = {
 Vue.createApp(SimpleRouter).mount('#app')
 ```
 
-Combined with the [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API), you can build a very basic but fully-functional client-side router. To see that in practice, check out [this example app](https://github.com/phanan/vue-3.0-simple-routing-example).
+Combinado con la [API de Historial](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API), puede construir un enrutador básico pero completamente funcional en el cliente. Para ver eso en práctica, visite [esta aplicación de ejemplo](https://github.com/phanan/vue-3.0-simple-routing-example).
 
-## Integrating 3rd-Party Routers
+## Integrando Enrutadores de Terceros
 
-If there's a 3rd-party router you prefer to use, such as [Page.js](https://github.com/visionmedia/page.js) or [Director](https://github.com/flatiron/director), integration is [similarly straightforward](https://github.com/phanan/vue-3.0-simple-routing-example/compare/master...pagejs). Here's a [complete example](https://github.com/phanan/vue-3.0-simple-routing-example/tree/pagejs) using Page.js.
+Si existe un enrutador de terceros que prefiera utilizar, como [Page.js](https://github.com/visionmedia/page.js) o [Director](https://github.com/flatiron/director), la integración es [sencillamente similar](https://github.com/phanan/vue-3.0-simple-routing-example/compare/master...pagejs). Aquí encontrará un [ejemplo completo](https://github.com/phanan/vue-3.0-simple-routing-example/tree/pagejs) empleando Page.js.
