@@ -52,8 +52,7 @@ Algunas de las nuevas características que merece la pena ver en Vue 3 incluye:
 ## Cambios que afectan a desarrollos previos
 
 ::: info INFO
-Aún estamos trabajando en una Compilación 
-We are still working on a dedicated Migration Build of Vue 3 with Vue 2 compatible behavior and runtime warnings of incompatible usage. If you are planning to migrate a non-trivial Vue 2 app, we strongly recommend waiting for the Migration Build for a smoother experience.
+Aún estamos trabajando en una guía de migración de Vue 3 con comportamiento compatible con Vue 2 y advertencias en tiempo de ejecución del uso incompatible. Si está planeando migrar una aplicación compleja desarrollada con Vue 2, le recomendamos esperar por la guía de migración para una mejor experiencia.
 :::
 
 Lo siguiente constituye una lista de los cambios que afectan a los desarrollos realizados con Vue 2.x:
