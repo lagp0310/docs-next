@@ -1,30 +1,30 @@
 ---
 badges:
-  - breaking
+  - cambio importante
 ---
 
-# Custom Directives <MigrationBadges :badges="$frontmatter.badges" />
+# Directivas Modificadas <MigrationBadges :badges="$frontmatter.badges" />
 
-## Overview
+## Vistazo General
 
-Here is a quick summary of what has changed:
+Aquí hay un resumen breve de lo que cambió:
 
-- API has been renamed to better align with component lifecycle
-- Custom directives will be controlled by child component via `v-bind="$attrs"`
+- La API ha sido renombrada para alinearse mejor con el ciclo de vida de componentes
+- Las directivas modificadas serán controladas por componentes hijos a través de `v-bind="$attrs"`
 
-For more information, read on!
+Para mayor información, ¡siga leyendo!
 
-## 2.x Syntax
+## Sintaxis de la versión 2.x
 
-In Vue 2, custom directives were created by using the hooks listed below to target an element’s lifecycle, all of which are optional:
+En Vue 2, las directivas modificadas fueron creadas utilizando los _hooks_ listados a continuación para apuntar al ciclo de vida de un elemento, los cuales son opcionales:
 
-- **bind** - Occurs once the directive is bound to the element. Occurs only once.
-- **inserted** - Occurs once the element is inserted into the parent DOM.
-- **update** - This hook is called when the element updates, but children haven't been updated yet.
-- **componentUpdated** - This hook is called once the component and the children have been updated.
-- **unbind** - This hook is called once the directive is removed. Also called only once.
+- **bind** - Ocurre una vez que la directiva es vinculada al elemento. Ocurre una sola vez.
+- **inserted** - Ocurre una vez que el elemento es insertado en el DOM padre.
+- **update** - Este _hook_ es llamado cuando el elemento se actualiza, pero los hijos no han sido actualizados aún.
+- **componentUpdated** - Este _hook_ es llamado una vez que el componente y los hijos han sido actualizados.
+- **unbind** - Este _hook_ es llamado una vez que la directiva es eliminada. También es llamado una única vez.
 
-Here’s an example of this:
+Aquí hay un ejemplo de esto:
 
 ```html
 <p v-highlight="yellow">Highlight this text bright yellow</p>
@@ -38,21 +38,21 @@ Vue.directive('highlight', {
 })
 ```
 
-Here, in the initial setup for this element, the directive binds a style by passing in a value, that can be updated to different values through the application.
+Aquí, en la preparación inicial para este elemento, la directiva vincula un estilo pasando un valor, que puede ser actualizado a valores diferentes a través de la aplicación.
 
-## 3.x Syntax
+## Sintaxis de la verisión 3.x
 
-In Vue 3, however, we’ve created a more cohesive API for custom directives. As you can see, they differ greatly from our component lifecycle methods even though we’re hooking into similar events. We’ve now unified them like so:
+En Vue 3, sin embargo, hemos creado una API más cohesiva para las directivas modificadas. Como puede observar, estas difieren en gran medida de nuestros métodos de ciclo de vida de componente aunque estamos hablando de eventos similares. Ahora los hemos unificado como sigue a continuación:
 
 - bind → **beforeMount**
 - inserted → **mounted**
-- **beforeUpdate**: new! this is called before the element itself is updated, much like the component lifecycle hooks.
-- update → removed! There were too many similarities to updated, so this is redundant. Please use updated instead.
+- **beforeUpdate**: ¡Nuevo! Este es llamado antes de que el elemento en sí sea actualizado, similar a los _hooks_ del ciclo de vida del componente.
+- update → ¡Eliminado! Existían muchas similitudes a _update_, por lo que este es redundante. Por favor, en su lugar, utilice _updated_.
 - componentUpdated → **updated**
-- **beforeUnmount** new! similar to component lifecycle hooks, this will be called right before an element is unmounted.
+- **beforeUnmount** ¡Nuevo! Similar a los _hooks_ del ciclo de vida de componentes, esto será llamado antes de que un elemento sea desmontado.
 - unbind -> **unmounted**
 
-The final API is as follows:
+La API final es como se muestra a continuación:
 
 ```js
 const MyDirective = {
@@ -65,7 +65,7 @@ const MyDirective = {
 }
 ```
 
-The resulting API could be used like this, mirroring the example from earlier:
+La API resultante puede ser utilizada así, reflejando el ejemplo de antes:
 
 ```html
 <p v-highlight="yellow">Highlight this text bright yellow</p>
@@ -81,28 +81,28 @@ app.directive('highlight', {
 })
 ```
 
-Now that the custom directive lifecycle hooks mirror those of the components themselves, they become easier to reason about and remember!
+Ahora que los _hooks_ del ciclo de vida de directivas modificadas reflejan los de los componentes en sí, ¡estos se vuelven más fáciles de entender y recordar!
 
-## Implementation Details
+## Detalles de Implementación
 
-In Vue 3, we're now supporting fragments, which allow us to return more than one DOM node per component. You can imagine how handy that is for something like a component with multiple lis or the children elements of a table:
+En Vue 3, ahora estamos soportando fragmentos, lo que nos permite retornar más de un nodo DOM por componente. Puede imaginar cuán práctico es esto para algo como un componente con múltiples etiquetas li o los elementos hijo de una tabla:
 
 ```html
 <template>
-  <li>Hello</li>
+  <li>¡Hola</li>
   <li>Vue</li>
   <li>Devs!</li>
 </template>
 ```
 
-As wonderfully flexible as this is, we can potentially encounter a problem with a custom directive that could have multiple root nodes.
+Tan maravillosamente flexible como es esto, podemos encontrar un problema potencial con una directiva modificada que pueda tener múltiples nodos raíz.
 
-As a result, custom directives are now included as part of a virtual DOM node’s data. When a custom directive is used on a component, hooks are passed down to the component as extraneous props and end up in `this.$attrs`.
+Como resultado, las directivas modificadas ahora son incluidas como parte de los datos de un nodo de DOM virtual. Cuando una directiva modificada es utilizada en un componente, los _hooks_ son pasados al componente como propiedades extrañas y terminan en `this.$attrs`.
 
-This also means it's possible to directly hook into an element's lifecycle like this in the template, which can be handy when a custom directive is too involved:
+Esto también significa que es posible enganchar directamente en el ciclo de vida de un elemento así como en la plantilla, lo que puede ser práctico cuando una directiva modificada está muy involucrada:
 
 ```html
 <div @vnodeMounted="myHook" />
 ```
 
-This is consistent with the attribute fallthrough behavior, so when a child component uses `v-bind="$attrs"` on an inner element, it will apply any custom directives used on it as well.
+Esto es consistente con el comportamiento del atributo de caída a través, así que cuando un componente hijo utilice `v-bind="$attrs"` en un elemento interno, este aplicará también cualquier directiva modificada utilizada en él.
