@@ -20,10 +20,10 @@ Empiece aprendiendo Vue 3 en [Vue Mastery](https://www.vuemastery.com/courses-pa
 
 ## Inicio Rápido
 
-- Via CDN: `<script src="https://unpkg.com/vue@next"></script>`
-- In-browser playground on [Codepen](https://codepen.io/yyx990803/pen/OJNoaZL)
-- In-browser Sandbox on [CodeSandbox](https://v3.vue.new)
-- Scaffold via [Vite](https://github.com/vitejs/vite):
+- A través de una CDN: `<script src="https://unpkg.com/vue@next"></script>`
+- Entorno dentro del navegador en [Codepen](https://codepen.io/yyx990803/pen/OJNoaZL)
+- _Sandbox_ dentro del navegador en [CodeSandbox](https://v3.vue.new)
+- Estructura generada utilizando [Vite](https://github.com/vitejs/vite):
 
   ```bash
   npm init vite-app hello-vue3 # OR yarn create vite-app hello-vue3
