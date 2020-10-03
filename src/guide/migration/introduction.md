@@ -20,9 +20,10 @@ Empiece aprendiendo Vue 3 en [Vue Mastery](https://www.vuemastery.com/courses-pa
 
 ## Inicio Rápido
 
-- A través de un CDN: `<script src="https://unpkg.com/vue@next"></script>`
-- Entorno de pruebas en el navegador en [Codepen](https://codepen.io/yyx990803/pen/OJNoaZL)
-- Generado mediante [Vite](https://github.com/vitejs/vite):
+- Via CDN: `<script src="https://unpkg.com/vue@next"></script>`
+- In-browser playground on [Codepen](https://codepen.io/yyx990803/pen/OJNoaZL)
+- In-browser Sandbox on [CodeSandbox](https://v3.vue.new)
+- Scaffold via [Vite](https://github.com/vitejs/vite):
 
   ```bash
   npm init vite-app hello-vue3 # OR yarn create vite-app hello-vue3
@@ -154,14 +155,14 @@ Es recomendado el uso de [VSCode](https://code.visualstudio.com/) con nuetra ext
 
 ### Otros Proyectos
 
-| Proyecto               | NPM                            | Repo                 |
-| ---------------------  | -----------------------------  | -------------------- |
-| @vue/babel-plugin-jsx  | [![rc][jsx-badge]][jsx-npm]    | [[GitHub][jsx-code]] |
-| eslint-plugin-vue      | [![beta][epv-badge]][epv-npm]  | [[GitHub][epv-code]] |
-| @vue/test-utils        | [![beta][vtu-badge]][vtu-npm]  | [[GitHub][vtu-code]] |
-| vue-class-component    |  [![beta][vcc-badge]][vcc-npm] | [[GitHub][vcc-code]] |
-| vue-loader             | [![beta][vl-badge]][vl-npm]    | [[GitHub][vl-code]]  |
-| rollup-plugin-vue      | [![beta][rpv-badge]][rpv-npm]  | [[GitHub][rpv-code]] |
+| Project               | NPM                           | Repo                 |
+| --------------------- | ----------------------------- | -------------------- |
+| @vue/babel-plugin-jsx | [![rc][jsx-badge]][jsx-npm]   | [[GitHub][jsx-code]] |
+| eslint-plugin-vue     | [![ga][epv-badge]][epv-npm]   | [[GitHub][epv-code]] |
+| @vue/test-utils       | [![beta][vtu-badge]][vtu-npm] | [[GitHub][vtu-code]] |
+| vue-class-component   | [![beta][vcc-badge]][vcc-npm] | [[GitHub][vcc-code]] |
+| vue-loader            | [![beta][vl-badge]][vl-npm]   | [[GitHub][vl-code]]  |
+| rollup-plugin-vue     | [![beta][rpv-badge]][rpv-npm] | [[GitHub][rpv-code]] |
 
 [jsx-badge]: https://img.shields.io/npm/v/@vue/babel-plugin-jsx.svg
 [jsx-npm]: https://www.npmjs.com/package/@vue/babel-plugin-jsx
@@ -169,8 +170,8 @@ Es recomendado el uso de [VSCode](https://code.visualstudio.com/) con nuetra ext
 [vd-badge]: https://img.shields.io/npm/v/@vue/devtools/beta.svg
 [vd-npm]: https://www.npmjs.com/package/@vue/devtools/v/beta
 [vd-code]: https://github.com/vuejs/vue-devtools/tree/next
-[epv-badge]: https://img.shields.io/npm/v/eslint-plugin-vue/next.svg
-[epv-npm]: https://www.npmjs.com/package/eslint-plugin-vue/v/next
+[epv-badge]: https://img.shields.io/npm/v/eslint-plugin-vue.svg
+[epv-npm]: https://www.npmjs.com/package/eslint-plugin-vue
 [epv-code]: https://github.com/vuejs/eslint-plugin-vue
 [vtu-badge]: https://img.shields.io/npm/v/@vue/test-utils/next.svg
 [vtu-npm]: https://www.npmjs.com/package/@vue/test-utils/v/next

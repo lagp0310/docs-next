@@ -85,7 +85,7 @@ Ahora que los _hooks_ del ciclo de vida de directivas modificadas reflejan los d
 
 ## Detalles de Implementación
 
-En Vue 3, ahora estamos soportando fragmentos, lo que nos permite retornar más de un nodo DOM por componente. Puede imaginar cuán práctico es esto para algo como un componente con múltiples etiquetas li o los elementos hijo de una tabla:
+In Vue 3, we're now supporting fragments, which allow us to return more than one DOM node per component. You can imagine how handy that is for something like a component with multiple `<li>` elements or the children elements of a table:
 
 ```html
 <template>
