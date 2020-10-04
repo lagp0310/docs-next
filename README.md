@@ -4,7 +4,7 @@ Este sitio está construido con [VuePress](https://vuepress.vuejs.org/). El cont
 
 ## Redacción
 
-Vea la [Guía de Escritura de Documentación de Vue](https://v3.vuejs.org/guide/writing-guide.html) para conocer nuestras reglas y recomendaciones en la redacción y mantenimiento de la documentación.
+Vea la [Guía de Redacción de Documentación de Vue](https://v3.vuejs.org/guide/writing-guide.html) para conocer nuestras reglas y recomendaciones en la redacción y mantenimiento de la documentación.
 
 ## Desarrollando
 
@@ -32,4 +32,4 @@ El sitio es desplegado automáticamente en [Netlify](https://www.netlify.com/) c
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f2a10860-1550-433c-ba59-c0fedf0001b0/deploy-status)](https://app.netlify.com/sites/spanish-vue-next/deploys)
 
-Check it out at: https://spanish-vue-next.netlify.app/
+Proyecto Desplegado en: [Vue Docs Next Spanish.](https://spanish-vue-next.netlify.app/)
