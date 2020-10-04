@@ -1,6 +1,6 @@
 # Sintaxis de Plantillas
 
-Vue.js uses an HTML-based template syntax that allows you to declaratively bind the rendered DOM to the underlying component instance's data. All Vue.js templates are valid HTML that can be parsed by spec-compliant browsers and HTML parsers.
+Vue.js utiliza una sintaxis de plantillas basado en HTML que le permite vincular declarativamente el DOM renderizado a los datos que hay debajo de la instancia del componente. Todas las plantillas Vue.js son HTML válido que puede ser procesado por navegadores y procesadores HTML que cumplen con las especificaciones.
 
 Detrás de escena, Vue compila las plantillas a funciones de renderizado en un DOM Virtual. Combinado con el sistema de reactividad, Vue es capaz de encontrar inteligentemente el mínimo número de componentes que requieren ser renderizados y aplicar la menor cantidad de manipulaciones de DOM posibles cuando el estado de la aplicación cambia.
 
@@ -16,7 +16,7 @@ La forma más básica de vinculación de datos es la interpolación de texto emp
 <span>Mensaje: {{ msg }}</span>
 ```
 
-The mustache tag will be replaced with the value of the `msg` property from the corresponding component instance. It will also be updated whenever the `msg` property changes.
+La etiqueta de llaves dobles será reemplazada con el valor de la propiedad `msg` de la instancia de componente correspondiente. También será actualizado cuando la propiedad `msg` cambie.
 
 Usted también puede realizar interpolaciones de "una sola vez", las cuales no actualizan los datos si estos cambian, empleando la [directiva v-once](../api/directives.html#v-once), pero tome en cuenta que esto también afectará cualquier otra vinculación en el mismo nodo:
 
@@ -123,7 +123,7 @@ abajo en la sección "Restricciones de Expresión de Argumento Dinámico".
 <a v-bind:[attributeName]="url"> ... </a>
 ```
 
-Here `attributeName` will be dynamically evaluated as a JavaScript expression, and its evaluated value will be used as the final value for the argument. For example, if your component instance has a data property, `attributeName`, whose value is `"href"`, then this binding will be equivalent to `v-bind:href`.
+Aquí, `attributeName` será evaluado dinámicamente como una expresión de JavaScript, y su valor resultante será utilizado como el valor final para el argumento. Por ejemplo, si su instancia de componente tiene una propiedad de datos `attributeName`, cuyo valor es `"href"`, entonces esta vinculación será equivalente a `v-bind:href`.
 
 De forma similar, puede utilizar argumentos dinámicos para vincular un manejador a un nombre de evento dinámico::
 

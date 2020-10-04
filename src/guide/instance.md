@@ -1,6 +1,6 @@
-# Application & Component Instances
+# Instancias de Aplicación y Componente
 
-## Creating an Application Instance
+## Creando una Instancia de Aplicación
 
 Cada aplicación Vue empieza con la creación de una **instancia de aplicación** con la función `createApp`:
 
@@ -8,7 +8,7 @@ Cada aplicación Vue empieza con la creación de una **instancia de aplicación*
 const app = Vue.createApp({ /* options */ })
 ```
 
-The application instance is used to register 'globals' that can then be used by components within that application. We'll discuss that in detail later in the guide but as a quick example:
+La instancia de la aplicación es utilizada para registrar 'globals' que luego puede ser utilizada por componentes dentro de esa aplicación. Discutiremos eso en detalle más adelante en esta guía, pero como un ejemplo rápido:
 
 ```js
 const app = Vue.createApp({})
@@ -17,7 +17,7 @@ app.directive('focus', FocusDirective)
 app.use(LocalePlugin)
 ```
 
-Most of the methods exposed by the application instance return that same instance, allowing for chaining:
+La mayoría de los métodos expuestos por la instancia de la aplicación retornan la misma instancia, permitiendo el encadenamiento:
 
 ```js
 Vue.createApp({})
@@ -26,13 +26,13 @@ Vue.createApp({})
   .use(LocalePlugin)
 ```
 
-You can browse the full application API in the [API reference](../api/application-api.html).
+Usted puede ver la API de la aplicación completa en [API reference](../api/application-api.html).
 
-## The Root Component
+## El Componente Raíz
 
-The options passed to `createApp` are used to configure the **root component**. That component is used as the starting point for rendering when we **mount** the application.
+Las opciones pasadas a `createApp` son utilizadas para configurar el **componente raíz**. Ese componente es utilizado como punto de partida para renderizar cuando **montamos** la aplicación.
 
-An application needs to be mounted into a DOM element. For example, if we want to mount a Vue application into `<div id="app"></div>`, we should pass `#app`:
+Una aplicación necesita ser montada en un elemento del DOM. Por ejemplo, si queremos montar una aplicación Vue en `<div id="app"></div>`, deberíamos pasar `#app`:
 
 ```js
 const RootComponent = { /* options */ }
@@ -40,11 +40,11 @@ const app = Vue.createApp(RootComponent)
 const vm = app.mount('#app')
 ```
 
-Unlike most of the application methods, `mount` does not return the application. Instead it returns the root component instance.
+A diferencia de la mayoría de los métodos de la aplicación, `mount` no retorna la aplicación. En vez de eso, retorna la instancia del componente raíz.
 
-Although not strictly associated with the [MVVM pattern](https://en.wikipedia.org/wiki/Model_View_ViewModel), Vue's design was partly inspired by it. As a convention, we often use the variable `vm` (short for ViewModel) to refer to a component instance.
+Aunque no está estrictamente asociado con el [Patrón MVVM](https://en.wikipedia.org/wiki/Model_View_ViewModel), el diseño de Vue fue parcialmente inspirado por este. Como una convención, a menudo utilizamos la variable `vm` (abreviatura de _ViewModel_) para referirnos a la instancia de un componente.
 
-While all the examples on this page only need a single component, most real applications are organized into a tree of nested, reusable components. For example, a Todo application's component tree might look like this:
+Aunque todos los ejemplos en esta página solo necesitan un componente único, la mayoría de las aplicaciones del mundo real están organizadas en un árbol de componentes anidados y reutilizables. Por ejemplo, un árbol de componentes de una aplicación _Todo_ puede verse como sigue a continuación:
 
 ```
 Root Component
@@ -57,13 +57,13 @@ Root Component
       └─ TodoListStatistics
 ```
 
-Each component will have its own component instance, `vm`. For some components, such as `TodoItem`, there will likely be multiple instances rendered at any one time. All of the component instances in this application will share the same application instance.
+Cada componente tendrá su propia instancia de componente, `vm`. Para algunos componentes, como `TodoItem`, es muy probable que haya múltiples instancias renderizadas en un mismo momento. Todas las instancias de componentes en esta aplicación compartirán la misma instancia de aplicación.
 
-We'll talk about [the component system](component-basics.html) in detail later. For now, just be aware that the root component isn't really any different from any other component. The configuration options are the same, as is the behavior of the corresponding component instance.
+Hablaremos luego [del sistema de componentes](component-basics.html) con mayor detalle. Por ahora, solo debe saber que el componente raíz no es diferente de cualquier otro componente. Las opciones de configuración son las mismas, así como también el comportamiento de la instancia de componente correspondiente.
 
-## Component Instance Properties
+## Propiedades de Instancia de Componente
 
-Earlier in the guide we met `data` properties. Properties defined in `data` are exposed via the component instance:
+Previamente en esta guía vimos las propiedades `data`. Las propiedades definidas en `data` son expuestas a través de la instancia del componente:
 
 ```js
 const app = Vue.createApp({
@@ -77,13 +77,13 @@ const vm = app.mount('#app')
 console.log(vm.count) // => 4
 ```
 
-There are various other component options that add user-defined properties to the component instance, such as `methods`, `props`, `computed`, `inject` and `setup`. We'll discuss each of these in depth later in the guide. All of the properties of the component instance, no matter how they are defined, will be accessible in the component's template.
+Existen otras opciones de componente que añaden propiedades definidas por el usuario a la instancia del componente, tal como `methods`, `props`, `computed`, `inject` y `setup`. Discutiremos cada una de esas en detalle más adelante en esta guía. Todas las propiedades de la instnacia del componente, sin importar cómo son definidas, serán accesibles en la plantilla del componente.
 
-Vue also exposes some built-in properties via the component instance, such as `$attrs` and `$emit`. These properties all have a `$` prefix to avoid conflicting with user-defined property names.
+Vue también expone algunas propiedades integradas a través de la instancia del componente, tal como `$attrs` y `$emit`. Estas propiedades tienen un prefijo `$` para evitar conflictos con nombres de propiedades definidas por el usuario.
 
-## Lifecycle Hooks
+## _Hooks_ de Ciclo de Vida
 
-Each component instance goes through a series of initialization steps when it's created - for example, it needs to set up data observation, compile the template, mount the instance to the DOM, and update the DOM when data changes. Along the way, it also runs functions called **lifecycle hooks**, giving users the opportunity to add their own code at specific stages.
+Cada instancia de componente pasa por una serie de pasos de inicialización cuando este es creado, por ejemplo, necesita preparar la observación de datos, compilar la plantilla, montar la instancia al DOM y actualizar el mismo cuando los datos cambian. En el camino, también ejecuta funciones llamadas **_hooks_ de ciclo de vida**, dando a los usuarios la oportunidad de añadir su propio código en etapas específicas.
 
 Por ejemplo, el _hook_ [created](../api/options-lifecycle-hooks.html#created) puede ser utilizado para ejecutar código después de que una instancia fue creada:
 
