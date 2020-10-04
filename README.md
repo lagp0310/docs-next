@@ -29,3 +29,7 @@ yarn serve # or npm run serve
 ## Deploying
 
 The site is automatically deployed when commits land in `master`, via [Netlify](https://www.netlify.com/).
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f2a10860-1550-433c-ba59-c0fedf0001b0/deploy-status)](https://app.netlify.com/sites/spanish-vue-next/deploys)
+
+Check it out at: https://spanish-vue-next.netlify.app/
