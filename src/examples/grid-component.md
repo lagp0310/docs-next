@@ -1,6 +1,6 @@
-# Grid Component
+# Componente de Rejilla
 
-> This is an example of creating a reusable grid component and using it with external data.
+> Este es un ejemplo para crear un componente de rejilla reutilizable y utilizarlo con datos externos.
 
 <p class="codepen" data-height="300" data-theme-id="39028" data-default-tab="js,result" data-user="Vue" data-slug-hash="BaKbowJ" data-preview="true" data-editable="true" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Vue 3 Grid Component Example">
   <span>See the Pen <a href="https://codepen.io/team/Vue/pen/BaKbowJ">

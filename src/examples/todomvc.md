@@ -1,11 +1,11 @@
 # TodoMVC
 
-> This is a fully spec-compliant TodoMVC implementation in under 120 effective lines of JavaScript (excluding comments and blank lines).
+> Esta es una implementación de TodoMVC que cumple en su totalidad con las especificaciones en menos de 120 líneas efectivas de JavaScript (excluyendo comentarios y líneas en blanco).
 
 :::warning
-Note that if your web browser is configured to block 3rd-party data/cookies, the example below will not work, as the **localStorage** data will fail to be saved.
+Note que si su navegador web está configurado para bloquear datos/cookies de terceros, el ejemplo de abajo no funcionará, debido a que no se guardará los datos en **localStorage**.
 
-Additionally, due to limitations on CodePen, hashtag navigation will not work.
+Adicionalmente, debido a las limitaciones en CodePen, la navegación por _hashtag_ no funcionará.
 :::
 
 <p class="codepen" data-height="300" data-theme-id="39028" data-default-tab="js,result" data-user="Vue" data-slug-hash="Yzqyozj" data-preview="true" data-editable="true" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Vue 3 TodoMVC">
