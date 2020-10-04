@@ -1,14 +1,14 @@
 const sidebar = {
   cookbook: [
     {
-      title: 'Cookbook',
+      title: 'Recetario',
       collapsable: false,
       children: ['/cookbook/', '/cookbook/editable-svg-icons']
     }
   ],
   guide: [
     {
-      title: 'Essentials',
+      title: 'Esenciales',
       collapsable: false,
       children: [
         '/guide/installation',
@@ -26,7 +26,7 @@ const sidebar = {
       ]
     },
     {
-      title: 'Components In-Depth',
+      title: 'Componentes en Detalle',
       collapsable: false,
       children: [
         '/guide/component-registration',
@@ -41,7 +41,7 @@ const sidebar = {
       ]
     },
     {
-      title: 'Transitions & Animation',
+      title: 'Transiciones y Animación',
       collapsable: false,
       children: [
         '/guide/transitions-overview',
@@ -51,7 +51,7 @@ const sidebar = {
       ]
     },
     {
-      title: 'Reusability & Composition',
+      title: 'Reusabilidad y Composición',
       collapsable: false,
       children: [
         '/guide/mixins',
@@ -62,11 +62,11 @@ const sidebar = {
       ]
     },
     {
-      title: 'Advanced Guides',
+      title: 'Guías Avanzadas',
       collapsable: false,
       children: [
         {
-          title: 'Reactivity',
+          title: 'Reactividad',
           children: [
             '/guide/reactivity',
             '/guide/reactivity-fundamentals',
@@ -74,7 +74,7 @@ const sidebar = {
           ]
         },
         {
-          title: 'Composition API',
+          title: 'API de Composición',
           children: [
             '/guide/composition-api-introduction',
             '/guide/composition-api-setup',
@@ -88,7 +88,7 @@ const sidebar = {
       ]
     },
     {
-      title: 'Tooling',
+      title: 'Herramientas',
       collapsable: false,
       children: [
         '/guide/single-file-component',
@@ -98,12 +98,12 @@ const sidebar = {
       ]
     },
     {
-      title: 'Scaling Up',
+      title: 'Escalando su Aplicación',
       collapsable: false,
       children: ['/guide/routing', '/guide/state-management', '/guide/ssr']
     },
     {
-      title: 'Accessibility',
+      title: 'Accesibilidad',
       collapsable: false,
       children: [
         '/guide/a11y-basics',
@@ -113,7 +113,7 @@ const sidebar = {
       ]
     },
     {
-      title: 'Migration Guide',
+      title: 'Guía de Migración',
       collapsable: true,
       children: [
         '/guide/migration/introduction',
@@ -142,7 +142,7 @@ const sidebar = {
       ]
     },
     {
-      title: 'Contribute to the Docs',
+      title: 'Contribuya con la Documentación',
       collapsable: true,
       children: [
         '/guide/contributing/writing-guide',
@@ -156,7 +156,7 @@ const sidebar = {
     '/api/application-api',
     '/api/global-api',
     {
-      title: 'Options',
+      title: 'Opciones',
       collapsable: false,
       children: [
         '/api/options-data',
@@ -173,7 +173,7 @@ const sidebar = {
     '/api/special-attributes',
     '/api/built-in-components.md',
     {
-      title: 'Reactivity API',
+      title: 'API de Reactividad',
       collapsable: false,
       children: [
         '/api/basic-reactivity',
@@ -185,7 +185,7 @@ const sidebar = {
   ],
   examples: [
     {
-      title: 'Examples',
+      title: 'Ejemplos',
       collapsable: false,
       children: [
         '/examples/markdown',
@@ -204,7 +204,7 @@ const sidebar = {
 
 module.exports = {
   title: 'Vue.js',
-  description: 'Vue.js - The Progressive JavaScript Framework',
+  description: 'Vue.js - El Framework Progresivo de JavaScript',
   head: [
     [
       'link',
@@ -269,62 +269,62 @@ module.exports = {
     logo: '/logo.png',
     nav: [
       {
-        text: 'Docs',
-        ariaLabel: 'Documentation Menu',
+        text: 'Documentación',
+        ariaLabel: 'Menú de Documentación',
         items: [
           {
-            text: 'Guide',
+            text: 'Guía',
             link: '/guide/introduction'
           },
           {
-            text: 'Migration Guide',
+            text: 'Guía de Migración',
             link: '/guide/migration/introduction'
           },
           {
-            text: 'Style Guide',
+            text: 'Guía de Estilo',
             link: '/style-guide/'
           },
           {
-            text: 'Cookbook',
+            text: 'Recetario',
             link: '/cookbook/'
           },
           {
-            text: 'Examples',
+            text: 'Ejemplos',
             link: '/examples/markdown'
           }
         ]
       },
       {
-        text: 'API Reference',
+        text: 'Referencia de la API',
         link: '/api/application-config'
       },
       {
-        text: 'Ecosystem',
+        text: 'Ecosistema',
         items: [
           {
-            text: 'Community',
-            ariaLabel: 'Community Menu',
+            text: 'Comunidad',
+            ariaLabel: 'Menú de Comunidad',
             items: [
               {
-                text: 'Team',
+                text: 'Equipo',
                 link: '/community/team/'
               },
               {
-                text: 'Partners',
+                text: 'Socios',
                 link: '/community/partners'
               },
               {
-                text: 'Join',
+                text: 'Únase',
                 link: '/community/join/'
               },
               {
-                text: 'Themes',
+                text: 'Temas',
                 link: '/community/themes/'
               }
             ]
           },
           {
-            text: 'Official Projects',
+            text: 'Proyectos Oficiales',
             items: [
               {
                 text: 'Vue Router',
@@ -348,7 +348,7 @@ module.exports = {
                 link: 'https://github.com/vuejs/vue-devtools'
               },
               {
-                text: 'Weekly news',
+                text: 'Noticias Semanales',
                 link: 'https://news.vuejs.org/'
               }
             ]
@@ -356,19 +356,19 @@ module.exports = {
         ]
       },
       {
-        text: 'Support Vue',
+        text: 'Apoye Vue',
         link: '/support-vuejs/',
         items: [
           {
-            text: 'One-time Donations',
+            text: 'Donaciones Únicas',
             link: '/support-vuejs/#one-time-donations'
           },
           {
-            text: 'Recurring Pledges',
+            text: 'Compromisos Recurrentes',
             link: '/support-vuejs/#recurring-pledges'
           },
           {
-            text: 'T-Shirt Shop',
+            text: 'Tienda de Camisetas',
             link: 'https://vue.threadless.com/'
           }
         ]
@@ -376,8 +376,8 @@ module.exports = {
     ],
     repo: 'vuejs/docs-next',
     editLinks: false,
-    editLinkText: 'Edit this on GitHub!',
-    lastUpdated: 'Last updated',
+    editLinkText: '¡Edite esto en GitHub!',
+    lastUpdated: 'Actualizado por última vez',
     docsDir: 'src',
     sidebarDepth: 2,
     sidebar: {
@@ -401,8 +401,8 @@ module.exports = {
         serviceWorker: true,
         updatePopup: {
           '/': {
-            message: 'New content is available.',
-            buttonText: 'Refresh'
+            message: 'Nuevo contenido disponible.',
+            buttonText: 'Actualizar'
           }
         }
       }
