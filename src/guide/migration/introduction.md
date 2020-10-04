@@ -1,7 +1,7 @@
 # Introducción
 
 ::: info 
-¿Nuevo en Vue.js? Revise nuestra [Guía Escencial](/guide/introduction.html) para iniciar. 
+¿Nuevo en Vue.js? Revise nuestra [Guía Esencial](/guide/introduction.html) para iniciar. 
 :::
 
 Esta guía es principalmente para usuarios con experiencia previa con Vue 2 que quieren aprender sobre las nuevas características y cambios que hay en Vue 3. **Esto no es algo que debe leer completo antes de trabajar con Vue 3.** Aunque parezca que muchas cosas han cambiado, mucho de lo que conoce y ama de Vue sigue igual; pero queríamos ser tan completos como sea posible y proveer explicaciones detalladas y ejemplos para cada cambio documentado. 
