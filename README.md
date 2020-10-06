@@ -8,7 +8,7 @@ Vea la [Guía de Redacción de Documentación de Vue](https://v3.vuejs.org/guide
 
 ## Progreso de la Traducción.
 
-La siguiente tabla muestra los archivos del proyecto y el idioma en el que se encuentran. Esta permitirá fácil acceso a los archivos aún pendiente por ser traducidos.
+La siguiente tabla muestra los archivos del proyecto y el idioma en el que se encuentran. Esta permitirá fácil acceso a los archivos aún pendiente por ser traducidos (Generada con [Markdown Translation Tracker](https://github.com/lagp0310/markdown-docs-translation-tracker)).
 
 | Archivo | Idioma
 |---|---|
