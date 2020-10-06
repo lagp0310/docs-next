@@ -6,6 +6,11 @@ Este sitio está construido con [VuePress](https://vuepress.vuejs.org/). El cont
 
 Vea la [Guía de Redacción de Documentación de Vue](https://v3.vuejs.org/guide/writing-guide.html) para conocer nuestras reglas y recomendaciones en la redacción y mantenimiento de la documentación.
 
+## Contribuir.
+
+¡Gracias por querer contribuir con la traducción! :+1::tada:.  
+Para hacerlo, por favor, clona este repositorio, realiza los cambios y haz un _Pull Request_.
+
 ## Progreso de la Traducción.
 
 La siguiente tabla muestra los archivos del proyecto y el idioma en el que se encuentran. Esta permitirá fácil acceso a los archivos aún pendiente por ser traducidos (Generada con [Markdown Translation Tracker](https://github.com/lagp0310/markdown-docs-translation-tracker)).
