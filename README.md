@@ -112,7 +112,7 @@ La siguiente tabla muestra los archivos del proyecto y el idioma en el que se en
 |[v-model.md](src/guide/migration/v-model.md)|English :x:|
 |[watch.md](src/guide/migration/watch.md)|English :x:|
 |[mixins.md](src/guide/mixins.md)|English :x:|
-|[mobile.md](src/guide/mobile.md)|English :x:|
+|[mobile.md](src/guide/mobile.md)|Spanish :heavy_check_mark:|
 |[optimizations.md](src/guide/optimizations.md)|English :x:|
 |[plugins.md](src/guide/plugins.md)|English :x:|
 |[reactivity-computed-watchers.md](src/guide/reactivity-computed-watchers.md)|English :x:|
@@ -120,17 +120,17 @@ La siguiente tabla muestra los archivos del proyecto y el idioma en el que se en
 |[reactivity.md](src/guide/reactivity.md)|English :x:|
 |[render-function.md](src/guide/render-function.md)|English :x:|
 |[routing.md](src/guide/routing.md)|Spanish :heavy_check_mark:|
-|[single-file-component.md](src/guide/single-file-component.md)|English :x:|
+|[single-file-component.md](src/guide/single-file-component.md)|Spanish :heavy_check_mark:|
 |[ssr.md](src/guide/ssr.md)|Spanish :heavy_check_mark:|
 |[state-management.md](src/guide/state-management.md)|English :x:|
 |[teleport.md](src/guide/teleport.md)|English :x:|
 |[template-syntax.md](src/guide/template-syntax.md)|Spanish :heavy_check_mark:|
-|[testing.md](src/guide/testing.md)|English :x:|
+|[testing.md](src/guide/testing.md)|Spanish :heavy_check_mark:|
 |[transitions-enterleave.md](src/guide/transitions-enterleave.md)|English :x:|
 |[transitions-list.md](src/guide/transitions-list.md)|English :x:|
 |[transitions-overview.md](src/guide/transitions-overview.md)|English :x:|
 |[transitions-state.md](src/guide/transitions-state.md)|English :x:|
-|[typescript-support.md](src/guide/typescript-support.md)|English :x:|
+|[typescript-support.md](src/guide/typescript-support.md)|Spanish :heavy_check_mark:|
 |[README.md](src/style-guide/README.md)|English :x:|
 |[README.md](src/support-vuejs/README.md)|English :x:|
 
