@@ -1,3 +1,7 @@
+# Cambio de repositorio. 
+
+La traducción al Español se llevará a cabo en [1950Labs/docs-next](https://github.com/1950Labs/docs-next).
+
 # v3.vuejs.org (Spanish).
 
 Este sitio está construido con [VuePress](https://vuepress.vuejs.org/). El contenido del sitio está escrito en formato Markdown ubicado en `src`.
